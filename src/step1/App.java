@@ -19,6 +19,10 @@ public class App {
         products.add(new Product("AirPods Pro", 350000, "노이즈 캔슬링 무선 이어폰", 20));
 
         System.out.println("[ 실시간 커머스 플랫폼 - 전자제품 ]");
+
+
+
+        while (true){
         int productNum = 1;
         for (Product product : products) {
             System.out.println(productNum + ". " +
@@ -30,11 +34,20 @@ public class App {
         }
         System.out.println("0. 종료           |프로그램 종료");
         System.out.print("번호를 입력해주세요: ");
-        sc.nextInt();
-        int num = 0;
-        if (num == 0){
-            System.out.println(" 커머스 플랫폼을 종료하겠습니다. ");}
+        int selectedNumber = sc.nextInt();
+        if (selectedNumber == 0){
+            System.out.println(" 커머스 플랫폼을 종료하겠습니다. ");
+            break;
+            }
+
+
+        }
+
+
+
+
 
     }
 }
 
+//while 문
