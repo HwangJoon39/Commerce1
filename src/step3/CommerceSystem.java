@@ -9,12 +9,13 @@ public class CommerceSystem {
     //속성
     private List<Category> categories;
     private Scanner sc;
-
+    private Category selectedCategory;
 
     //생성자
     public CommerceSystem(List<Category> categories, Scanner sc) {
         this.categories = categories;
         this.sc = sc;
+
     }
 
 
@@ -39,7 +40,7 @@ public class CommerceSystem {
                 System.out.println("커머스 플랫폼을 종료하겠습니다. ");
                 break;
             } else {
-                Category selectedCategory = categories.get(selectCategory - 1);
+                selectedCategory = categories.get(selectCategory - 1);
                 System.out.println("[ " + selectedCategory.getName() + " 카테고리 ]");
 
 
